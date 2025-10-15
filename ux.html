@@ -7,14 +7,115 @@
 </head>
 <body>
 
-    <h1>UX van HTML</h1>
+<h1>UX van HTML</h1>
   
-    <h2 id="links">links</h2>
-    <a href="ux.html">ux html</a>
+<h2 id="links">links</h2>
+<a href="ux.html">ux html</a>
+  
+<h1>afbeeldingen</h1>
+<img src="images/voorbeeld.png" alt="voorbeeld afbeelding">
+<p>Deze pagina verzamelt voorbeelden en oefeningen rond de gebruikservaring die HTML je "gratis" geeft wanneer je de juiste elementen gebruikt.</p>
+
+<nav>
+  <a href="#links">Links</a>
+  <a href="#afbeeldingen">Afbeeldingen</a>
+  <a href="#labels">Labels</a>
+  <a href="#headings">Headings</a>
+  <a href="#details">Details / Accordeon</a>
+  <a href="#popups">Popups</a>
+</nav>
+
+<h2 id="links">Links</h2>
+
+<p>Links</p>
+
+  <a href="ux.html">UX van HTML (link naar dezelfde pagina)</a>
+  <a href="#afbeeldingen">Ga naar Afbeeldingen</a>
+  <a href="ux.html" download>Download deze pagina</a>
+  <a href="ux.html" target="_blank" rel="noopener">Open in nieuw tabblad</a>
+  <button type="button" onclick="location.href='ux.html'">Knop die naar UX van HTML gaat (JS)</button>
+
+
+<h2 id="afbeeldingen">Afbeeldingen</h2>
+  <a href="ux.html"><img src="" alt="Icoon: download" width="24" height="24"> UX van HTML</a>
   
 
 
+<h2 id="labels">Labels</h2>
+
+  <h1>Docenten</h1>
+  <ul>
+    <li><input type="checkbox"> Docent 1</li>
+    <li><input type="checkbox"> Docent 2</li>
+    <li><input type="checkbox"> Docent 3</li>
+  </ul>
+
+  <ul>
+    <li><input type="checkbox"> Cyd</li>
+    <li><input type="checkbox"> Dorien</li>
+    <li><input type="checkbox"> Gwen</li>
+  </ul>
+
+  <ul>
+    <li><label><input type="checkbox" name="docent"> Cyd</label></li>
+    <li><label><input type="checkbox" name="docent"> Dorien</label></li>
+    <li><label><input type="checkbox" name="docent"> Gwen</label></li>
+  </ul>
 
 
+  <h1>Adresgegevens </h1>
+  <p><input type="text" placeholder="Straat"></p>
+  <p><input type="text" placeholder="Huisnummer"></p>
+  <p><input type="text" placeholder="Postcode"></p>
+  <p><input type="text" placeholder="Plaats"></p>
+
+
+  <h1>Adresgegevens</h1>
+  <p>Straat: <input type="text"></p>
+  <p>Huisnummer: <input type="text"></p>
+  <p>Postcode: <input type="text"></p>
+  <p>Plaats: <input type="text"></p>
+
+
+  <h1>Adresgegevens</h1>
+  <p><label for="straat">Straat:</label> <input id="straat" type="text"></p>
+  <p><label for="huisnr">Huisnummer:</label> <input id="huisnr" type="text"></p>
+  <p><label for="postcode">Postcode:</label> <input id="postcode" type="text"></p>
+  <p><label for="plaats">Plaats:</label> <input id="plaats" type="text"></p>
+
+
+<h2 id="headings">Headings</h2>
+
+<div class="example">
+  <h1>H1</h1>
+  <h2>H2</h2>
+  <h3>H3</h3>
+</div>
+
+<h2 id="details">Details / Accordeon</h2>
+
+<details>
+  <summary>info</summary>
+  <p>hier text</p>
+  <p>hier text</p>
+</details>
+
+<details name="Thomas">
+  <summary>Moet ik kunnen coderen?</summary>
+  <p>ja</p>
+</details>
+<details name="Thomas">
+  <summary>Wanneer moet het af zijn</summary>
+  <p>Voor Semester 4</p>
+</details>
+
+
+<h2 id="popups">Popups</h2>
+
+<button popovertarget="popup">Open iets</button>
+<dialog popover id="popup">
+  <p>Leuk he?</p>
+  <button popovertarget="popup" popovertargetaction="hide">Sluit het weer</button>
+</dialog>
 
 
